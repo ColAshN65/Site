@@ -1,0 +1,37 @@
+/*Тут все варианты компоновки*/
+
+/*Стиль для установки элемента ровно по центру экрана поверх всего*/
+.ScreenMiddle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Контейнер, внутри которого содержимое выстраивается в строку в центре по горизонтали*/
+.MiddleContainer{
+    display: flex;
+    justify-content: center;
+}
+
+/*Контейнер, внутри которого содержимое просто выстраивается в строку*/
+.FlexContainer{
+    display: flex;
+}
+
+/*Контейнер, внутри которого содержимое выстраивается в столбик*/
+.BlockContainer{
+    display: block;
+}
+
+/*Просто пустой разделитель*/
+.Splitter{
+    height: 50px;
+}
+
+/*Заставляет что бы то ни было хоть как-то сесть в центр*/
+.Middle{
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}

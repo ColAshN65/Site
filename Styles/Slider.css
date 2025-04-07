@@ -1,0 +1,76 @@
+
+
+.SliderBox{
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    border: 10px solid #3f51b5;
+}
+
+.Navigation{
+    position: relative;
+    bottom: 32px;
+    left: 90%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.Bar{
+    height:  8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #ddd;
+    opacity: .7;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+
+.Bar:hover{
+    opacity: o.8;
+    transform: scale(1.1);
+}
+
+input[name = "r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.Slides{
+    width: 200%;
+    height: 100%;
+    display: flex;
+}
+
+.SlideElement{
+    width: 50%;
+    transition: all .6s ease;
+}
+
+.SlideElement img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -50%;
+}
+/*
+.Slider{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.SlideElement{
+    height: 100px;
+    
+    min-width: 100vw;
+
+    scroll-snap-align: start;
+
+}
+*/

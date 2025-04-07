@@ -1,0 +1,56 @@
+
+/*Стиль основной кнопки*/
+.ControlButton {
+    color: #3f51b5;
+    border: solid 1px #3f51b5;
+    background: #1E1E1E;
+    margin: 5px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/*Поведение основной кнопки при наведении*/
+.ControlButton:hover{
+    background: #151b3b;
+}
+
+/*Поведение основной кнопки при нажатии*/
+.ControlButton:active{
+    background: #01041a;
+}
+
+/*Базовый стиль кнопки в заголовке*/
+.HeaderButton {
+    /*Макет*/
+    padding: 25px 80px;
+    position: relative;
+
+    /*Контент*/
+    font-family: 'Lato';
+    font-size: inherit;
+    color: inherit;
+    letter-spacing: 1px;
+    font-weight: 700;
+
+    /*Эффекты*/
+    background: none;
+    
+}
+
+
+
+/* Icon separator */
+.btn-sep {
+   padding: 5px 20px 5px 10px;
+}
+
+.btn-sep:before {
+    background: rgba(0,0,0,0.15);
+}
+
+
+/* Icons */
+.icon-cart:before {
+    content: "\f07a";
+  
+}

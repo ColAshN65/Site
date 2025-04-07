@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Личный кабинет</title>
+        <link rel="stylesheet" href="Styles/Headers.css">
+        <link rel="stylesheet" href="Styles/MainTheme.css">
+        <link rel="stylesheet" href="Styles/Buttons.css">
+        <link rel="stylesheet" href="Styles/Slider.css">
+        <link rel="stylesheet" href="Styles/TextBoxes.css">
+        <link rel="stylesheet" href="Styles/Layout.css">
+        <link rel="stylesheet" href="Styles/Images.css">
+    </head>
+    <body class="BackgroundElement">
+
+        <!-- Шапка -->
+        <nav class="HeaderNavBar">
+            <a class="HeaderText ContentBox" href="index.html">Магазин Электроники</a>
+            <div class="ContentBox" id="NavBar">
+            </div>
+        </nav>
+
+        <div class="Splitter"></div>
+
+        <div>
+            <div class="MiddleContainer">
+                <div class="BlockContainer">
+
+                    <h2 class="h2">Профиль:</h2>
+
+                    <div class="ContentCard FlexContainer">
+                        <img class="BigIcon" src="Resources/Logo.png">
+                        <div>
+                            <h2 class="h2">Добро пожаловать, <span id="LoginField" value="LoginField"></span>!</h2>
+    
+                            <div class="AdvancedTextBox SimpleControl">
+    
+                                <input class="Input TextBox" type="name" id="NameField">
+                                <label class="Label">Имя</label>
+    
+                            </div>
+                            <div class="AdvancedTextBox SimpleControl">
+            
+                                <input class="Input TextBox" type="name" id="CityField">
+                                <label class="Label">Город</label>
+            
+                            </div>
+                            <button class="ControlButton">Применить изменения</button>
+                            <div><button class="ControlButton" onclick="LogOut()">Выйти</button></div>
+                        </div>
+                    </div>
+
+                    <h2 class="h2">Покупки:</h2>
+
+                    <div id="PurchasesList">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <script src="Scripts/Navigation.js"></script>
+        <script src="Scripts/Profile.js"></script>
+        <script src="Scripts/Authorization.js"></script>
+    </body>
+</html>

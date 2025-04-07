@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Авторизация</title>
+        <link rel="stylesheet" href="Styles/Headers.css">
+        <link rel="stylesheet" href="Styles/MainTheme.css">
+        <link rel="stylesheet" href="Styles/Buttons.css">
+        <link rel="stylesheet" href="Styles/Slider.css">
+        <link rel="stylesheet" href="Styles/TextBoxes.css">
+        <link rel="stylesheet" href="Styles/Layout.css">
+    </head>
+    <body class="BackgroundElement">
+
+        <!-- Шапка -->
+        <nav class="HeaderNavBar">
+            <a class="HeaderText ContentBox" href="../index.html">Магазин Электроники</a>
+            <div class="ContentBox" id="NavBar">
+            </div>
+        </nav>
+
+        <div class="ScreenMiddle">
+            <div class="ContentCard">
+                <h1 class="h1">Авторизация</h1>
+    
+                <p><input type="text" class="TextBox" placeholder="Логин/Почта"></p>
+    
+                <p><input type="password" class="TextBox" placeholder="Пароль"></p>
+    
+                <button id="Authorize" class="ControlButton" onclick="Authorize()">Войти</button>
+            </div>
+        </div>
+        
+
+        <script src="Scripts/Navigation.js"></script>
+        <script src="Scripts/Authorization.js"></script>
+    </body>
+</html>

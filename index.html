@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Интернет-магазин</title>
+        <link rel="stylesheet" href="Styles/Buttons.css">
+        <link rel="stylesheet" href="Styles/Headers.css">
+        <link rel="stylesheet" href="Styles/Images.css">
+        <link rel="stylesheet" href="Styles/Layout.css">
+        <link rel="stylesheet" href="Styles/MainTheme.css">
+        <link rel="stylesheet" href="Styles/Slider.css">
+    </head>
+
+
+    <body class="BackgroundElement">
+        <!-- Шапка -->
+        <nav class="HeaderNavBar">
+            <div class="HeaderText ContentBox">Магазин Электроники</div>
+            <div class="ContentBox" id="NavBar">
+                
+            </div>
+        </nav>
+        
+        <!-- Слайдер с акциями-->
+        <div class="MiddleContainer">
+            <div>
+                <h2 class="h2 Middle">Акции:</h2>
+                    <div style="height: 200; width: 300;">  
+
+                        <div class="SliderBox Middle">
+                            <div class="Slides">
+                                <input type="Radio" name="r" id="r1" checked>
+                                <input type="Radio" name="r" id="r2">
+                                
+                                <div class="SlideElement s1"><img src="Resources/Stonks.jpg" alt="Акция 1"></div>
+                                <div class="SlideElement"><img src="Resources/Money.jpg" alt="Акция 2"></div>
+                            </div>
+                            
+                            <div class="Navigation">
+                                <label for="r1" class="Bar">
+
+                                </label>
+                                <label for="r2" class="Bar">
+
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="Splitter"></div>
+
+        <!-- Фильтры и сортировка -->
+        <div class="MiddleContainer">
+            <div class="filters">
+                <select id="CategoryFilter" class="Control">
+                    <option value="">Все категории</option>
+                </select>
+
+                <input type="number" id="PriceMin" class="Control" placeholder="Мин цена">
+                <input type="number" id="PriceMax" class="Control" placeholder="Макс цена">
+
+                <select id="RatingFilter" class="Control">
+                    <option value="">Рейтинг</option>
+                    <option value="4">4+</option>
+                    <option value="3">3+</option>
+                </select>
+
+                <select id="Sort" class="Control">
+                    <option value="price_asc">Цена по возрастанию</option>
+                    <option value="price_desc">Цена по убыванию</option>
+                    <option value="rating">Рейтинг</option>
+                </select>
+
+                <button class="ControlButton" onclick="SearchProducts()">Поиск</button>
+            </div>
+        </div>
+
+        <div id="ProductList">
+        </div>
+        
+    </body>
+
+    <script src="/Scripts/Navigation.js"></script>
+    <script src="/Scripts/Shop.js"></script>
+</html>
